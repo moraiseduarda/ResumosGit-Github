@@ -24,10 +24,24 @@ Será usado como a "assinatura" de todos os commits.
 
 ##### Aula 2 - Gravando alterações no repositório local
 
-| Comando              | Objetivo                                  | Descrição                                                                                                         |
-| -------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `git status`         | Verificar o status                        | Mostra as alterações no diretório de trabalho e na área de staging (a área de preparação)                         |
-| `git init`           | Iniciar repositório                       | Inicia um novo repositório em um diretório                                                                        |
-| `git branch -M main` | Altera nome da branch principal para main | Para garantir a compatibilidade no futuro é recomendado atualizar o nome da branch principal, de master para main |
++++ Resumo branch
 
-|
+| Comando                                                        | Objetivo                        | Descrição                                                                                 |
+| -------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------- |
+| `git status`                                                   | Verificar o status              | Mostra as alterações no diretório de trabalho e na área de staging (a área de preparação) |
+| `git init`                                                     | Iniciar repositório             | Inicia um novo repositório em um diretório                                                |
+| `git add nome_do_arquivo`                                      | Adicionar arquivo para rastrear | Adiciona apenas o arquivo mencionado ao rastreio do Git                                   |
+| `git add .`                                                    | Adicionar arquivo para rastrear | Adiciona todos os arquivos ao rastreio do Git                                             |
+| `git commit -m "Mensagem descritiva do commit"`                | Confirmar os arquivos           | Confirma os arquivos rastreados com um breve nome que descreva as alterações feitas       |
+| `git log`                                                      | Exibir commits                  | Exibe histórico de commits                                                                |
+| `git clone [url]`                                              | Clonar repositório              | Clona um repositório existente                                                            |
+| `git remote`                                                   | Exibir repositório remoto       | Exibe o diretório remoto                                                                  |
+| `git pull`                                                     | Baixar conteúdo remoto          | Baixa o conteúdo do repositório remoto, atualizando automaticamente o repositório local.  |
+| `git push`                                                     | Enviar conteúdo local           | Envia o conteúdo do repositório local, atualizando automaticamente o repositório remoto.  |
+| `git remote add origem https://github.com/username/origem.git` | Adicionar repositório remoto    | Adiciona um repositório remoto ao repositório local                                       |
+
+##### Aula 3 - Desfazendo alterações no repositório local
+
+| Comando               | Objetivo        | Descrição                                                                              |
+| --------------------- | --------------- | -------------------------------------------------------------------------------------- |
+| `git rm arquivo1.txt` | Remover arquivo | Remove arquivos do seu diretório de trabalho e prepara a remoção para o próximo commit |
